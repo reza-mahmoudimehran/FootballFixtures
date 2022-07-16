@@ -9,11 +9,17 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
 import ir.reza_mahmoudi.footballfixtures.data.remote.FixturesService
+import ir.reza_mahmoudi.footballfixtures.di.DaggerApiComponent
 import ir.reza_mahmoudi.footballfixtures.model.Fixtures
+import javax.inject.Inject
 
 class HomeViewModel : ViewModel() {
+    @Inject
+    lateinit var fixturesService: FixturesService
 
-    private val fixturesService= FixturesService()
+    init{
+        DaggerApiComponent.create().inject(this)
+    }
     private val disposable = CompositeDisposable()
 
     val fixtures = MutableLiveData<Fixtures>()
