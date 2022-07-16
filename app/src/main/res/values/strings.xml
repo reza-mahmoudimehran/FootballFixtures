@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Football Fixtures</string>
+    <string name="dash">-</string>
+    <string name="team_home_icon">Home Icon</string>
+    <string name="team_away_icon">Away Icon</string>
+    <string name="error_text">An Error Occurred While Loading Data</string>
 </resources>

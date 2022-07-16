@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_small"
+    android:layout_margin="@dimen/spacing_small"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/txtMatchHomeName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        style="@style/TeamName"
+        android:gravity="end"/>
+    <ImageView
+        android:id="@+id/imgMatchHomeImage"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:contentDescription="@string/team_home_icon" />
+    <TextView
+        android:id="@+id/txtMatchHomeScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/TeamName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/dash"
+        style="@style/TeamName"/>
+    <TextView
+        android:id="@+id/txtMatchAwayScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/TeamName"/>
+    <ImageView
+        android:id="@+id/imgMatchAwayImage"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:contentDescription="@string/team_away_icon" />
+    <TextView
+        android:id="@+id/txtMatchAwayName"
+        android:layout_width="0dp"
+        android:gravity="start"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        style="@style/TeamName"/>
+</LinearLayout>
